@@ -119,6 +119,10 @@
               window.onload = function() {
                   canvasDots();
               };
+            function Register(){
+              var regislocat = "https://www.betterthanbronze.ga/register.html";
+              document.location = regislocat;
+            }
         </script>
         <canvas class='connecting-dots'></canvas>
         <div class="landing-login">
@@ -126,8 +130,11 @@
             <div class="landing-login-form">
                 <form class="landing-login-form" action="login.php" method="post">
                   <input class="login-input" type="text" name="username" placeholder="Username" value=""><br><br>
-                  <input class="login-input" type="password" name="password" placeholder="Password" value="">
+                  <input class="login-input" type="password" name="password" placeholder="Password" value=""><br><br>
+                  <button id="login-button" type="button" name="submit">login</button>
                 </form>
+                <br><br><br>
+                <button id="login-button" onclick="Register()">Register</button>
             </div>
             <p style="color: White;">Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
         </div>

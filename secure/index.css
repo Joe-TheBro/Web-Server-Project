@@ -33,5 +33,18 @@ canvas {
   font-size: 48px;
 }
 .login-input{
+ border-color: #c0c6d8;
+ border-style: ridge;
 
+}
+#login-button{
+  border: 0px;
+  background-color: #001a72;
+  color: White;
+  width: 125px;
+  height: 50px;
+  font-size: 24;
+}
+.landing-login-form{
+  font-size: 24px;
 }
