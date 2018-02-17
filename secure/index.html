@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <p id="linetext" style="text-align:center;">Refresh to see login page</p>
     <div class="landing">
         <script>
             var canvasDots = function() {
@@ -123,6 +124,13 @@
               var regislocat = "https://www.betterthanbronze.ga/register.html";
               document.location = regislocat;
             };
+            $(document).ready(function(){
+              $("#linetext").hide();
+              $("#lines").click(function(){
+                $(".landing-login").hide();
+                $("#linetext").show();
+              })
+            })
         </script>
         <canvas class='connecting-dots'></canvas>
         <div class="landing-login">
@@ -136,7 +144,8 @@
                 <br><br><br>
                 <button id="login-button" onclick="Register()">Register</button>
             </div>
-            <p style="color: White;">Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+            <p style="color: White;">Copyright (c) 2018 Copyright Holder All Rights Reserved.</p><br>
+            <p id="lines" style="color: White; text-decoration: underline;">Click to play with the lines</p>
         </div>
     </div>
 </body>
