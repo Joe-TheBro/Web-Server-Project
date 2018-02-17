@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <p id="linetext" style="text-align:center;">Refresh to see login page</p>
+  <div style="background-color: #001a72;" id="linetext"><p style="text-align:center; color: White;">Refresh to see login page</p></div>
     <div class="landing">
         <script>
             var canvasDots = function() {
@@ -139,7 +139,7 @@
                 <form class="landing-login-form" action="login.php" method="post">
                   <input class="login-input" type="text" name="username" placeholder="Username" value=""><br><br>
                   <input class="login-input" type="password" name="password" placeholder="Password" value=""><br><br>
-                  <button id="login-button" type="button" name="submit">login</button>
+                  <button id="login-button" type="submit" name="submit">login</button>
                 </form>
                 <br><br><br>
                 <button id="login-button" onclick="Register()">Register</button>
