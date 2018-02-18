@@ -1,16 +1,10 @@
-<?php
-require 'login.php';
-if($logged != 'True'){
-  header('Location: https://www.betterthanbronze.ga');
-};
-?>
-<!DOCTYPE html>
-<html>
+ <html>
   <head>
+    <?php require 'login.php'; require 'logcheck.php';?>
     <meta charset="utf-8">
     <title>Welcome</title>
   </head>
   <body>
- <br><a href="logout.php">Logout</a>
+<a href="logout.php">Logout</a><br>
   </body>
 </html>

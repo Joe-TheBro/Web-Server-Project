@@ -14,13 +14,5 @@ if (isset($_POST['username']) and isset($_POST['password'])){
   }else {
     header('Location: https://www.betterthanbronze.ga/');
   }
-};
-
-
-
-if (isset($_SESSION['username'])){
-  $username = $_SESSION['username'];
-  echo "Welcome " . $username;
-  $logged = 'True';
-}
+ };
 ?>

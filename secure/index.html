@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=yes">
     <title>Login</title>
     <link rel="shortcut icon" href="icon.png"/>
     <link rel="stylesheet"  type="text/css" href="index.css">
@@ -139,12 +139,12 @@
             <p class="btext">Login</p>
             <div class="landing-login-form">
                 <form class="landing-login-form" action="member.php" method="post">
-                  <div class="input-icon1"></div><input class="login-input SmallText" type="text" name="username" placeholder="Username" value=""><br>
-                  <div class="input-icon2"></div><input class="login-input SmallText" type="password" name="password" placeholder="Password" value=""><br><br>
-                  <button id="login-button" type="submit" name="submit">login</button>
+                  <input class="login-input SmallText" type="text" name="username" placeholder="Username" value="" required><br>
+                  <input class="login-input SmallText" type="password" name="password" placeholder="Password" value="" required><br><br>
+                  <button class="login-button" type="submit" name="submit">login</button>
                 </form>
                 <br>
-                <button id="login-button" onclick="Register()">Register</button>
+                <button class="login-button" onclick="Register()">Signup</button>
             </div>
             <br><br>
             <p id="lines" style="color: White;">Click to play with the lines</p>
