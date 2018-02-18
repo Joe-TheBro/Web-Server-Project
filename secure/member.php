@@ -1,18 +1,16 @@
 <?php
-if (isset($_SESSION['username'])){
-  $username = $_SESSION['username'];
-}
-else {
-   header(location("http://www.betterthanbronze.ga"));
-}
- ?>
- <html>
-   <head>
-     <meta charset="utf-8">
-     <title>Welcome</title>
-   </head>
-   <body>
-     <p>HOLY SHIT IT WORKS WTF</p>
-     <a href="logout.php">Logout</a>
-   </body>
- </html>
+require 'login.php';
+if($logged != 'True'){
+  header('Location: https://www.betterthanbronze.ga');
+};
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+  </head>
+  <body>
+ <br><a href="logout.php">Logout</a>
+  </body>
+</html>

@@ -1,50 +1,307 @@
-* {
-  box-sizing: border-box; }
+@media(min-width: 1600px) {
+  * {
+    box-sizing: border-box; }
 
-html, body {
-  background-size: cover;
-  background-color: #001a72;
-  font-size: 10px;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  line-height: 150%; }
+  html, body {
+    background-size: cover;
+    background-color: #001a72;
+    font-size: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 150%; }
 
-div {
-  height: 100%; }
+  div {
+    height: 100%; }
 
-canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
-.landing-login{
-  background-color: #ffffff;
-  position: absolute;
-  width: 500px;
-  margin: 0 auto;
-  left: 560px;
-  top: 250px;
-  height: 500px;
-  text-align: center;
-}
-.btext{
-  font-size: 48px;
-}
-.login-input{
- border-color: #c0c6d8;
- border-style: ridge;
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .landing{
 
+    }
+
+  .landing-login{
+
+    position: absolute;
+    width: 500px;
+    margin: 0 auto;
+    left: 650px;
+    top: 250px;
+    height: 500px;
+    text-align: center;
+
+  }
+  .btext{
+    font-size: 48px;
+    color:White;
+  }
+  .login-input{
+   border-color: #535a72;
+   border-style:ridge;
+   background-color: #d8d8d8;
+  }
+  #login-button{
+    border: 0px;
+    background-color: transparent;
+    color: White;
+    width: 125px;
+    height: 50px;
+    right: 30px;
+    font-size: 24;
+  }
+  .landing-login-form{
+    font-size: 24px;
+  }
+  .SmallText{
+    font-size: 18px;
+  }
+  .input-icon1{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 87px;
+    left: 72px;
+    background-color: #535a72;
+  }
+  .input-icon2{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 125px;
+    left: 72px;
+    background-color:#535a72;
+  }
 }
-#login-button{
-  border: 0px;
-  background-color: #001a72;
-  color: White;
-  width: 125px;
-  height: 50px;
-  font-size: 24;
+@media (min-width: 1900px) {
+  * {
+    box-sizing: border-box; }
+
+  html, body {
+    background-size: cover;
+    background-color: #001a72;
+    font-size: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 150%; }
+
+  div {
+    height: 100%; }
+
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .landing{
+
+    }
+
+  .landing-login{
+
+    position: absolute;
+    width: 500px;
+    margin: 0 auto;
+    left: 740px;
+    top: 250px;
+    height: 500px;
+    text-align: center;
+
+  }
+  .btext{
+    font-size: 48px;
+    color:White;
+  }
+  .login-input{
+   border-color: #535a72;
+   border-style:ridge;
+   background-color: #d8d8d8;
+  }
+  #login-button{
+    border: 0px;
+    background-color: transparent;
+    color: White;
+    width: 125px;
+    height: 50px;
+    font-size: 24;
+  }
+  .landing-login-form{
+    font-size: 24px;
+  }
+  #SmallText{
+    font-size: 18px;
+  }
+  .input-icon1{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 87px;
+    left: 72px;
+    background-color: #535a72;
+  }
+  .input-icon2{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 125px;
+    left: 72px;
+    background-color:#535a72;
+  }
 }
-.landing-login-form{
-  font-size: 24px;
+@media (min-width: 375px) {
+  * {
+    box-sizing: border-box; }
+
+  html, body {
+    background-size: cover;
+    background-color: #001a72;
+    font-size: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 150%; }
+
+  div {
+    height: 100%; }
+
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .landing{
+ width: 300px;
+ height: 600;
+    }
+  .landing-login{
+
+    position: absolute;
+    width: 375px;
+    margin: 0 auto;
+    top: 200px;
+    height: 500px;
+    text-align: center;
+
+  }
+  .btext{
+    font-size: 48px;
+    color:White;
+  }
+  .login-input{
+   border-color: #535a72;
+   border-style:ridge;
+   background-color: #d8d8d8;
+  }
+  #login-button{
+    border: 0px;
+    background-color: transparent;
+    color: White;
+    width: 125px;
+    height: 50px;
+    font-size: 24;
+  }
+  .landing-login-form{
+    font-size: 24px;
+  }
+  #SmallText{
+    font-size: 18px;
+  }
+  .input-icon1{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 87px;
+    left: 72px;
+    background-color: #535a72;
+  }
+  .input-icon2{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 125px;
+    left: 72px;
+    background-color:#535a72;
+  }
+}
+@media (min-width: 410px) {
+  * {
+    box-sizing: border-box; }
+
+  html, body {
+    background-size: cover;
+    background-color: #001a72;
+    font-size: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 150%; }
+
+  div {
+    height: 100%; }
+
+  canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .landing{
+ width: 300px;
+ height: 600;
+    }
+  .landing-login{
+
+    position: absolute;
+    width: 412px;
+    margin: 0 auto;
+    top: 200px;
+    height: 500px;
+    text-align: center;
+
+  }
+  .btext{
+    font-size: 48px;
+    color:White;
+  }
+  .login-input{
+   border-color: #535a72;
+   border-style:ridge;
+   background-color: #d8d8d8;
+  }
+  #login-button{
+    border: 0px;
+    background-color: transparent;
+    color: White;
+    width: 125px;
+    height: 50px;
+    font-size: 24;
+  }
+  .landing-login-form{
+    font-size: 24px;
+  }
+  #SmallText{
+    font-size: 18px;
+  }
+  .input-icon1{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 87px;
+    left: 72px;
+    background-color: #535a72;
+  }
+  .input-icon2{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 125px;
+    left: 72px;
+    background-color:#535a72;
+  }
 }

@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="icon.png"/>
+    <link rel="stylesheet"  type="text/css" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -26,7 +27,6 @@
                   ctx.fillStyle = colorDot;
                   ctx.lineWidth = .1;
                   ctx.strokeStyle = color;
-
                   var mousePosition = {
                       x: 30 * canvas.width / 100,
                       y: 30 * canvas.height / 100
@@ -103,6 +103,7 @@
                           dot.create();
                       }
 
+
                       dot.line();
                       dot.animate();
                   }
@@ -125,6 +126,7 @@
               document.location = regislocat;
             };
             $(document).ready(function(){
+              $("#Loginfail").hide();
               $("#linetext").hide();
               $("#lines").click(function(){
                 $(".landing-login").hide();
@@ -136,16 +138,16 @@
         <div class="landing-login">
             <p class="btext">Login</p>
             <div class="landing-login-form">
-                <form class="landing-login-form" action="login.php" method="post">
-                  <input class="login-input" type="text" name="username" placeholder="Username" value=""><br><br>
-                  <input class="login-input" type="password" name="password" placeholder="Password" value=""><br><br>
+                <form class="landing-login-form" action="member.php" method="post">
+                  <div class="input-icon1"></div><input class="login-input SmallText" type="text" name="username" placeholder="Username" value=""><br>
+                  <div class="input-icon2"></div><input class="login-input SmallText" type="password" name="password" placeholder="Password" value=""><br><br>
                   <button id="login-button" type="submit" name="submit">login</button>
                 </form>
-                <br><br><br>
+                <br>
                 <button id="login-button" onclick="Register()">Register</button>
             </div>
-            <p style="color: White;">Copyright (c) 2018 Copyright Holder All Rights Reserved.</p><br>
-            <p id="lines" style="color: White; text-decoration: underline;">Click to play with the lines</p>
+            <br><br>
+            <p id="lines" style="color: White;">Click to play with the lines</p>
         </div>
     </div>
 </body>
