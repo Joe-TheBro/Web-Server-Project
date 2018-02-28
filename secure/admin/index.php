@@ -1,9 +1,12 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=yes">
-    <title>Login</title>
+    <title>Delete</title>
     <link rel="shortcut icon" href="icon.png"/>
     <link rel="stylesheet"  type="text/css" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -121,37 +124,28 @@
               window.onload = function() {
                   canvasDots();
               };
-            function ReLink(){
-              var regislocat = "https://www.betterthanbronze.ga/";
-              document.location = regislocat;
-            };
             $(document).ready(function(){
+              $("#Loginfail").hide();
               $("#linetext").hide();
               $("#lines").click(function(){
                 $(".landing-login").hide();
                 $("#linetext").show();
-              });
-            });
+              })
+            })
         </script>
         <canvas class='connecting-dots'></canvas>
         <div class="landing-login">
-            <p class="btext">Signup</p>
+            <p class="btext">Delete</p>
             <div class="landing-login-form">
-                <form class="landing-login-form" action="register.php" method="post">
-                  <input class="login-input SmallText" type="text" name="username" placeholder="Username" value=""><br>
-                  <input class="login-input SmallText" type="password" name="password" placeholder="Password" value=""><br><br>
-                  <button class="login-button" type="submit" name="submit">Signup</button><br><br>
+                <form class="landing-login-form" action="delete.php" method="post">
+                  <input class="login-input SmallText" type="text" name="username" placeholder="Username" value="" required><br><br>
+                  <button class="login-button" type="submit" name="submit">Delete</button>
                 </form>
-                <button class="login-button" onclick="ReLink()">Login</button>
-                <div id="signinerrdiv">
-                  <br>
-                  <p id="signinerr">If redirected back to signup, the username that you want has been taken :(</p>
-                </div>
+                <br>
             </div>
             <br><br>
-              <p id="lines" style="color: White;">Click to play with the lines</p>
+            <p id="lines" style="color: White;">Click to play with the lines</p>
         </div>
     </div>
 </body>
-
 </html>

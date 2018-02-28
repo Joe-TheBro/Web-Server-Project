@@ -5,6 +5,7 @@
     <title>Welcome</title>
   </head>
   <body>
+    
 <a href="logout.php">Logout</a><br>
   </body>
 </html>

@@ -1,0 +1,4 @@
+AuthName "Please enter username and password"
+AuthType Basic
+AuthUserFile c:\xampp\apache\bin\.htpasswd
+require valid-user
